@@ -170,3 +170,32 @@ button:hover {
   background: transparent;
   color: #fff;
 }
+
+/* new video stuff */
+.media-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px dashed #ffffff;
+}
+.media-wrap iframe {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ffffff;
+}
+.media-details {
+  text-align: left;
+  max-width: 800px;
+  color: #ffffff;
+}
+.media-details h3 {
+  margin-bottom: 8px;
+  font-size: 1.2rem;
+}
+.media-details p {
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
