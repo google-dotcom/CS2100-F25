@@ -173,18 +173,20 @@ button:hover {
 
 /* new video stuff */
 .media-wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  margin-top: 20px;
-  padding: 10px;
-  border: 1px dashed #ffffff;
+  position: relative;
+  width: 100%;
+  max-width: 720px;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto;
+  border: 2px solid #fff;
 }
+
 .media-wrap iframe {
-  max-width: 100%;
-  height: auto;
-  border: 1px solid #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 .media-details {
   text-align: left;
@@ -198,4 +200,22 @@ button:hover {
 .media-details p {
   margin-bottom: 6px;
   font-size: 0.95rem;
+}
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 720px;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto 16px;
+}
+
+.video-container iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.media-details {
+  text-align: center;
+  color: #fff;
 }
