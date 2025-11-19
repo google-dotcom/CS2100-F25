@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>passwork</title>
     <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.6.3/default/snipcart.css" />
+    <script async src="https://cdn.snipcart.com/themes/v3.6.3/default/snipcart.js"></script>
 </head>
+<div hidden id="snipcart" data-api-key="ZGZmOGQ2ZGQtOGM5ZC00M2VlLWJkOTktMTNkZjgxOWI2Njc0NjM4OTkxMTE4MTg5MDU2NDU3"></div>
+
 <body>
     <div class="container">
         <header>
@@ -24,48 +29,30 @@
 
         <main>
             <section>
-                <h2>welcome</h2>
-                <br>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
-                <br>
-                <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
-                <br>
-                <p>Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
-                <br>
-            <section aria-labelledby="media-title">
-                <h2 id="media-title">Password Entropy</h2>
-                <div class="media-wrap">
-                <div class="video-container">
-                <iframe 
-                src="https://www.youtube.com/embed/mZ8r0r19y9o" 
-                title="Password Entropy Explained"
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-                </iframe>
-                </div>
-                <div class="media-details">
-                <h3>Password Entropy Explained</h3>
-                <p>Check out this video to get a quick grasp on password entropy</p>
-                </div>
+                <h2>Products</h2>
+
+                <div style="display:flex; gap:20px; justify-content:center; flex-wrap:wrap;">
+
+                    <div style="border:1px solid #fff; padding:15px; width:200px;">
+                        <h3>Premium Password Guide</h3>
+                        <p>$4.99</p>
+                        <button class="snipcart-add-item" data-item-id="guide" data-item-name="Premium Password Guide"
+                            data-item-price="4.99" data-item-url="/">
+                            Buy Now
+                        </button>
+                    </div>
+
+                    <div style="border:1px solid #fff; padding:15px; width:200px;">
+                        <h3>Entropy Calculator Pack</h3>
+                        <p>$2.99</p>
+                        <button class="snipcart-add-item" data-item-id="calc-pack"
+                            data-item-name="Entropy Calculator Pack" data-item-price="2.99" data-item-url="/">
+                            Buy Now
+                        </button>
+                    </div>
+
                 </div>
             </section>
-
-                        <section>
-                        <h2>Contact Me</h2>
-                        <form method="post" action="https://webdevbasics.net/scripts/demo.php">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
-
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-
-                        <button type="submit">Send</button>
-                        </form>
-                        </section>
         </main>
 
         <footer>
@@ -73,4 +60,5 @@
         </footer>
     </div>
 </body>
+
 </html>
