@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>passwork - password tester</title>
+    <meta name="description" content="check how strong your password is and see estimated crack time">
+    <link rel="stylesheet" href="project.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>p a s s w o r k</h1>
+            <br><br><br>
+            <nav>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="tester.html">tester</a></li>
+                    <li><a href="generator.html">generator</a></li>
+                    <li><a href="info.html">info</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <li><a href="resources.html">resources</a></li>
+                    <li><a href="about.html">about</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h2>password strength tester</h2>
+                <p>type in a password below to see how strong it is and how long it would take to crack.</p>
+
+                <form id="tester-form">
+                    <label for="password">enter password:</label>
+                    <input type="text" id="password" placeholder="your password">
+                    <button type="button" id="check-btn">check strength</button>
+                </form>
+
+                <div id="results" style="margin-top:15px;">
+                    <p><strong>strength:</strong> <span id="strength">-</span></p>
+                    <p><strong>estimated crack time:</strong> <span id="crack-time">-</span></p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>password generator & strength tester</p>
+        </footer>
+    </div>
+
+    <script src="js/passwordTester.js"></script>
+</body>
+
+</html>

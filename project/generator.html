@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>passwork - password generator</title>
+    <meta name="description" content="generate secure passwords with customizable options">
+    <link rel="stylesheet" href="project.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>p a s s w o r k</h1>
+            <br><br><br>
+            <nav>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="tester.html">tester</a></li>
+                    <li><a href="generator.html">generator</a></li>
+                    <li><a href="info.html">info</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <li><a href="resources.html">resources</a></li>
+                    <li><a href="about.html">about</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h2>password generator</h2>
+                <p>choose your options and generate</p>
+
+                <form id="generator-form">
+                    <label for="length">password length:</label>
+                    <input type="number" id="length" value="12" min="4" max="64">
+
+                    <label>
+                        <input type="checkbox" id="include-uppercase" checked>
+                        include uppercase letters
+                    </label>
+
+                    <label>
+                        <input type="checkbox" id="include-lowercase" checked>
+                        include lowercase letters
+                    </label>
+
+                    <label>
+                        <input type="checkbox" id="include-numbers" checked>
+                        include numbers
+                    </label>
+
+                    <label>
+                        <input type="checkbox" id="include-symbols" checked>
+                        include symbols
+                    </label>
+
+                    <button type="button" id="generate-btn">generate password</button>
+                </form>
+
+                <div id="generated-password" style="margin-top:15px;">
+                    <p><strong>your password:</strong> <span id="password-output">-</span></p>
+                    <button id="copy-btn">copy to clipboard</button>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>password generator & strength tester</p>
+        </footer>
+    </div>
+
+    <script src="js/passwordGenerator.js"></script>
+</body>
+
+</html>

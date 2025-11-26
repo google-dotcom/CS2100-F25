@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>passwork - contact</title>
+    <meta name="description" content="get in touch with the passwork team (me) using the contact form.">
+    <link rel="stylesheet" href="project.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>p a s s w o r k</h1>
+            <br><br><br>
+            <nav>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="tester.html">tester</a></li>
+                    <li><a href="generator.html">generator</a></li>
+                    <li><a href="info.html">info</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                    <li><a href="resources.html">resources</a></li>
+                    <li><a href="about.html">about</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <h2>contact me</h2>
+                <p>have questions or feedback? fill out the form below and i might get back to you eventually</p>
+
+                <form id="contact-form">
+                    <label for="name">name:</label>
+                    <input type="text" id="name" placeholder="your name" required>
+
+                    <label for="email">email:</label>
+                    <input type="email" id="email" placeholder="your email" required>
+
+                    <label for="message">message:</label>
+                    <textarea id="message" rows="5" placeholder="your message" required></textarea>
+
+                    <button type="submit">send message</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>password generator & strength tester</p>
+        </footer>
+    </div>
+
+    <script src="js/formValidation.js"></script>
+</body>
+
+</html>
