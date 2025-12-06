@@ -6,24 +6,28 @@
 
 body {
     font-family: 'Nimbus Mono PS', 'Courier New', monospace;
-    background: #000;
-    color: #fff;
+    background: black;
+    color: #F5F5F5;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    text-shadow: 2px 2px 2px rgba(255, 0, 0, 0.541), -2px -2px 2px rgba(255, 123, 0, 0.534);
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 .container {
     width: 90%;
     max-width: 900px;
+    background: black;
     text-align: center;
-    border: 2px solid #fff;
+    border: 2px solid #F5F5F5;
     padding: 20px;
 }
 
 header h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 10px;
 }
 
@@ -36,27 +40,27 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: #fff;
-    border: 1px solid #fff;
+    color: #F5F5F5;
+    border: 1px solid #F5F5F5;
     padding: 5px 10px;
     transition: 0.3s;
 }
 
 nav a:hover {
-    background: #fff;
+    background: #F5F5F5;
     color: #000;
 }
 
 section {
     margin: 25px 0;
     padding: 15px;
-    border: 1px dashed #fff;
+    border: 1px dashed #F5F5F5;
 }
 
 footer {
     margin-top: 20px;
-    font-size: 0.9rem;
-    border-top: 1px solid #fff;
+    font-size: 1.3rem;
+    border-top: 1px solid #F5F5F5;
     padding-top: 10px;
 }
 
@@ -68,7 +72,7 @@ footer {
     max-width: 720px;
     aspect-ratio: 16/9;
     margin: 0 auto;
-    border: 2px solid #fff;
+    border: 2px solid #F5F5F5;
 }
 
 .video-container iframe,
@@ -97,7 +101,7 @@ form {
     flex-direction: column;
     gap: 15px;
     background: rgba(255, 255, 255, 0.05);
-    border: 1px solid #fff;
+    border: 1px solid #F5F5F5;
     padding: 20px;
     text-align: left;
 }
@@ -111,8 +115,8 @@ label {
 input,
 textarea {
     background: transparent;
-    border: 1px solid #fff;
-    color: #fff;
+    border: 1px solid #F5F5F5;
+    color: #F5F5F5;
     font-family: inherit;
     padding: 10px;
     resize: none;
@@ -125,11 +129,11 @@ textarea:focus {
     box-shadow: 0 0 8px #0ff4;
 }
 
-/* button shtuff */
+/* button stuff */
 button {
-    background: #fff;
+    background: #F5F5F5;
     color: #000;
-    border: 1px solid #fff;
+    border: 1px solid #F5F5F5;
     padding: 10px;
     cursor: pointer;
     transition: 0.3s;
@@ -138,7 +142,7 @@ button {
 
 button:hover {
     background: transparent;
-    color: #fff;
+    color: #F5F5F5;
 }
 
 /* table stuff */
@@ -181,27 +185,34 @@ button:hover {
     }
 }
 
-/* hyper link changes */
-a:link {
-  color: green;
-  background-color: transparent;
-  text-decoration: none;
+/* hyperlink visibility changes (had to make colors important or they wouldnt work) */
+.container main a:link {
+    color: #8AB4F8 !important;
+    text-decoration: underline;
 }
 
-a:visited {
-  color: pink;
-  background-color: transparent;
-  text-decoration: none;
+.container main a:visited {
+    color: #C084FC !important;
+    text-decoration: underline;
 }
 
-a:hover {
-  color: red;
-  background-color: transparent;
-  text-decoration: underline;
+.container main a:hover {
+    color: #5EEAD4 !important;
+    text-decoration: underline;
 }
 
-a:active {
-  color: yellow;
-  background-color: transparent;
-  text-decoration: underline;
+.container main a:active {
+    color: #A3FFB3 !important;
+    text-decoration: underline;
 }
+
+#vanta-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
+}
+
